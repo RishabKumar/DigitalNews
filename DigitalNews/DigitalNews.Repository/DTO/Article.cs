@@ -23,7 +23,7 @@ namespace DigitalNews.Repository.DTO
         public virtual DateTime ArticleCreatedDate { get; set; }
 
         [SitecoreField(FieldName = "Number Of Views")]
-        public virtual int NumberOfViews { get; set; }
+        public virtual long NumberOfViews { get; set; }
 
         [SitecoreField(FieldName = "Author Name")]
         public virtual string AuthorName { get; set; }
