@@ -1,0 +1,58 @@
+﻿@using DigitalNews.Web.Models
+@model FeaturedArticles
+
+@{
+    var recent = Model.RecentArticles;
+    var popular = Model.MostPopularArticles;
+}
+<!-- TAB Component HTML Start -->
+<div class="col-xs-12">
+    <div class="toolsCalcu">
+        <div>
+            <ul role="tablist" class="navnav-tabs">
+                <li role="presentation" class="active"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab">Recent</a></li>
+                <li role="presentation"><a href="#mostpopular" aria-controls="mostpopular" role="tab" data-toggle="tab">Most Popular</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div id="recent" role="tabpanel" class="tab-pane active">
+                <div class="rht-sb-list">
+                    <ul>
+                        @if(recent == null || !recent.Any())
+                        {
+                            <li>No Articles posted</li>
+                        }
+                        else
+                        { 
+                            foreach (var tmp in recent)
+                            {
+                                <li><a href="#"><text>@tmp.Title</text> : <text>@tmp.Body</text></a></li>
+                            }
+                        }
+                        </ul>
+                </div>
+            </div>
+            <div id="mostpopular" role="tabpanel" class="tab-pane">
+                <div class="rht-sb-list">
+                    <ul>
+                        @if (popular == null || !popular.Any())
+                        {
+                            <li>No Articles posted</li>
+                        }
+                        else
+                        {
+                            foreach (var tmp in popular)
+                            {
+                                <li><a href="#"><text>@tmp.Title</text> : <text>@tmp.Body</text></a></li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TAB Component HTML End -->
+
+
+

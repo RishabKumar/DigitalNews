@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalNews.Web", "DigitalNews.Web\DigitalNews.Web.csproj", "{559319A4-ECB2-45F6-9EAD-3B949E7E4B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalNews.Repository", "DigitalNews.Repository\DigitalNews.Repository.csproj", "{0016B38A-7BF5-4D9C-AB36-8EFC34E1B906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{559319A4-ECB2-45F6-9EAD-3B949E7E4B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559319A4-ECB2-45F6-9EAD-3B949E7E4B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559319A4-ECB2-45F6-9EAD-3B949E7E4B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559319A4-ECB2-45F6-9EAD-3B949E7E4B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0016B38A-7BF5-4D9C-AB36-8EFC34E1B906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0016B38A-7BF5-4D9C-AB36-8EFC34E1B906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0016B38A-7BF5-4D9C-AB36-8EFC34E1B906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0016B38A-7BF5-4D9C-AB36-8EFC34E1B906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
